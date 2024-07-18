@@ -1,0 +1,128 @@
+:root {
+    --background: #F8F8FF;
+  }
+  
+  html {
+    margin:0;
+    height: 100%;
+    width: 100%;
+    background: var(--background);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  body {
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 75px;
+  }
+  
+  main {
+    padding: 75px;
+  }
+  
+  footer{
+    color: white;
+    background: teal;
+    padding: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 25px;
+  }
+  
+  .img,
+  .about {}
+  
+  .about {
+    min-height: 300px;
+    min-width: 50vw;
+    background: ghostwhite;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 20px;
+  }
+  
+  .img {
+    min-width: 400px;
+    min-height: 450px;
+    background: lightgoldenrodyellow;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  
+  .gridContainer {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    margin-bottom:50px;
+  }
+  
+  .cell {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-weight: bolder;
+    font-size: xx-large;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  }
+
+  .projectCard {
+    width: 100%;
+    height: 40%;
+    background: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  .projectTitle {
+    position: relative;
+    top: 75px;
+  }
+  
+  .info {
+    width: 600px;
+  }
+  .img2 {
+    width: 600px;
+    height:400px;
+    background: ghostwhite;
+  }
+
+  .backdrop {
+    position: absolute;
+    z-index: -1;
+    height: 550px;
+    width: 100%;
+    background: teal;
+    clip-path: polygon(0 0, 100% 0, 100% 54%, 0% 100%);
+}
+
+.one {
+    background: darkred;
+}
+.two {
+    background: lightpink;
+}
+.three {
+    background: lightgreen;
+}
+.four {
+    background: violet;
+}
+.five {
+    background: orange;
+}
+.six {
+    background: skyblue;
+}
